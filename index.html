@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Nexa Test</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+  <body>
+    <div class="main-header">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">Home</a>
+                    <a href="#">Devices</a>
+                    <a href="#">Delivery & Payments</a>
+                    <a href="#">Guarantee</a>
+                    <a href="#">About Us</a>
+                  </div>
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <span onclick="openNav()">&#9776;</span>
+                    <a href="#" class="navbar-brand">
+                        <img src="images/logo.png">
+                    </a>
+                    <div class="navbar-nav top-menu">
+                        <a href="#" class="nav-item nav-link active">Home</a>
+                        <a href="#" class="nav-item nav-link">Devices</a>
+                        <a href="#" class="nav-item nav-link">Delivery & Payments</a>
+                        <a href="#" class="nav-item nav-link">Guarantee</a>
+                        <a href="#" class="nav-item nav-link">About Us</a>
+                    </div>
+                    <div class="navbar-nav ml-auto cart">
+                        <a href="#"><img src="images/cart-icon.png" class="mr-1">Cart <label class="mx-1 mt-1">0</label></a>
+                        <button class="btn btn-default">Sign In</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg menu-search"> 
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"> <a class="nav-link" href="#" data-abc="true">Top Sales<span class="sr-only">(current)</span></a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-abc="true">Brand Focus</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-abc="true">Hi-Tech</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-abc="true">Best Sellers</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-abc="true">Projects</a> </li>
+                    </ul>
+                    <button class="btn btn-link">Support</button>
+                    <form class="d-flex ">
+                        <button type="button" class="btn"><i class="fa fa-search"></i></button>
+                        <input type="search" class="form-control rounded" placeholder="I'm looking for..." aria-label="Search" aria-describedby="search-addon"> 
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div id="banner-slider" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#banner-slider" data-slide-to="0" class="active"></li>
+              <li data-target="#banner-slider" data-slide-to="1"></li>
+              <li data-target="#banner-slider" data-slide-to="2"></li>
+              <li data-target="#banner-slider" data-slide-to="3"></li>
+            </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="banner-txt">
+                  <h3>iPhone 6 32 GB Black</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <button type="button" class="btn btn-primary">Buy Now</button>
+                </div>   
+              </div>
+              <div class="carousel-item">
+                <div class="banner-txt">
+                    <h3>iPhone 6 64 GB Black</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <button type="button" class="btn btn-primary">Buy Now</button>
+                </div>   
+              </div>
+              <div class="carousel-item">
+                <div class="banner-txt">
+                    <h3>iPhone 6 32 GB Gray</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <button type="button" class="btn btn-primary">Buy Now</button>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <div class="banner-txt">
+                    <h3>iPhone 6 32 GB White</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <button type="button" class="btn btn-primary">Buy Now</button>
+                </div>   
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#banner-slider" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#banner-slider" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+    </section>
+    <section>
+        <div class="container-fluid px-5">
+            <div class="top-filter px-4  mb-4">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12 d-flex align-items-center">
+                        <label>Sort By:</label>
+                        <select class="form-control float-right">
+                            <option>Best Match</option>
+                            <option>Best Match2</option>
+                            <option>Best Match3</option>
+                            <option>Best Match4</option>
+                            <option>Best Match5</option>
+                          </select>
+                    </div>
+                    <div class="col-lg-7 col-sm-12 d-flex align-items-center mid">
+                        <label>Keywords</label>
+                        <input class="form-control" type="text" placeholder="Tablet" style="width: 166px;">
+                        <label class="text-right mr-2">Price</label>
+                        <input class="form-control" type="text" placeholder="" style="width: 80px;">
+                        <input class="form-control" type="text" placeholder="" style="width: 80px;">
+                        <div class="shipping"><i class="fa fa-check-circle"></i>Free Shipping</div>
+                    </div>
+                    <div class="col-lg-2 col-sm-12 d-flex align-items-center">
+                        <label>Ship to:</label>
+                        <select class="form-control float-right">
+                            <option>USA</option>
+                            <option>India</option>
+                            <option>UK</option>
+                            <option>UAE</option>
+                          </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="row">
+                        <div class="container">
+                            <div id="side-menu">
+                                <div class="accordion" id="menu-sidebar">
+                                                    <div class="card">
+                                                        <div class="card-header" id="faqhead1">
+                                                            <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#menu-sidebar1"
+                                                            aria-expanded="true" aria-controls="menu-sidebar1">Top Sale</a>
+                                                        </div>
+                                                        <div id="menu-sidebar1" class="collapse" aria-labelledby="faqhead1" data-parent="#menu-sidebar">
+                                                            <div class="card-body p-0">
+                                                                <ul class="pl-0 m-0">
+                                                                    <li>Cell Phone</li>
+                                                                    <li>Camera</li>
+                                                                    <li>Computer</li>
+                                                                    <li>TV, Audio</li>
+                                                                    <li>Video Games</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div class="card-header" id="faqhead2">
+                                                            <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#menu-sidebar2"
+                                                            aria-expanded="true" aria-controls="menu-sidebar2">Brand Focus</a>
+                                                        </div>
+                                
+                                                        <div id="menu-sidebar2" class="collapse" aria-labelledby="faqhead2" data-parent="#menu-sidebar">
+                                                            <div class="card-body p-0">
+                                                                <ul class="pl-0 m-0">
+                                                                    <li>Cell Phone</li>
+                                                                    <li>Camera</li>
+                                                                    <li>Computer</li>
+                                                                    <li>TV, Audio</li>
+                                                                    <li>Video Games</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div class="card-header" id="faqhead3">
+                                                            <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#menu-sidebar3"
+                                                            aria-expanded="true" aria-controls="menu-sidebar3">Hi-Tech</a>
+                                                        </div>
+                                
+                                                        <div id="menu-sidebar3" class="collapse" aria-labelledby="faqhead3" data-parent="#menu-sidebar">
+                                                            <div class="card-body p-0">
+                                                                <ul class="pl-0 m-0">
+                                                                    <li>Cell Phone</li>
+                                                                    <li>Camera</li>
+                                                                    <li>Computer</li>
+                                                                    <li>TV, Audio</li>
+                                                                    <li>Video Games</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div class="card-header" id="faqhead4">
+                                                            <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#menu-sidebar4"
+                                                            aria-expanded="true" aria-controls="menu-sidebar4">Home</a>
+                                                        </div>
+                                
+                                                        <div id="menu-sidebar4" class="collapse" aria-labelledby="faqhead4" data-parent="#menu-sidebar">
+                                                            <div class="card-body p-0">
+                                                                <ul class="pl-0 m-0">
+                                                                    <li>Cell Phone</li>
+                                                                    <li>Camera</li>
+                                                                    <li>Computer</li>
+                                                                    <li>TV, Audio</li>
+                                                                    <li>Video Games</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div class="card-header" id="faqhead5">
+                                                            <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#menu-sidebar5"
+                                                            aria-expanded="true" aria-controls="menu-sidebar5">Sale</a>
+                                                        </div>
+                                
+                                                        <div id="menu-sidebar5" class="collapse" aria-labelledby="faqhead5" data-parent="#menu-sidebar">
+                                                            <div class="card-body p-0">
+                                                                <ul class="pl-0 m-0">
+                                                                    <li>Cell Phone</li>
+                                                                    <li>Camera</li>
+                                                                    <li>Computer</li>
+                                                                    <li>TV, Audio</li>
+                                                                    <li>Video Games</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="container">
+                            <div class="filter-sidebar  bg-white mt-4">
+                                <h6 class="p-3" style="border-bottom: 1px solid #f0f2f7;">Available</h6>
+                            <div class="form-check pl-0 m-3 d-flex justify-content-between">
+                                <input type="radio" class="form-check-input" id="in-storage" name="availability">
+                                <label class="form-check-label small" for="in-storage">In Storage</label>
+                                <span class="count">34</span>
+                            </div>
+                             <div class="form-check pl-0 m-3 d-flex justify-content-between">
+                                <input type="radio" class="form-check-input" id="in-online-shop" name="availability">
+                                <label class="form-check-label small" for="in-online-shop">In Online Shop</label>
+                                <span class="count">34</span>
+                            </div>
+                            <div class="p-3 d-flex justify-content-between" style="border-top: 1px solid #f0f2f7;border-bottom: 1px solid #f0f2f7;">
+                                <h6 class="m-0">Brands</h6>
+                                <a href="#" class="all">All</a>
+                            </div>
+                            <div class="form-check pl-0 m-3 d-flex justify-content-between">
+                                <input type="checkbox" class="form-check-input filled-in" id="apple">
+                                <label class="form-check-label small" for="apple">Apple</label>
+                                <span class="count">34</span>
+                            </div>
+                              <div class="form-check pl-0 m-3 d-flex justify-content-between">
+                                <input type="checkbox" class="form-check-input filled-in" id="jbl">
+                                <label class="form-check-label small" for="jbl">JBL</label>
+                                <span class="count">34</span>
+                            </div>
+                              <div class="form-check pl-0 m-3 d-flex justify-content-between">
+                                <input type="checkbox" class="form-check-input filled-in" id="boat">
+                                <label class="form-check-label small" for="boat">Boat</label>
+                                <span class="count">34</span>
+                            </div>
+                              <div class="form-check pl-0 m-3 d-flex justify-content-between">
+                                <input type="checkbox" class="form-check-input filled-in" id="nest">
+                                <label class="form-check-label small pb-3" for="nest">Nest</label>
+                                <span class="count">34</span>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-12">
+                    <div class="product-grid">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-12">
+                                <a href="#"><div class="card text-center">
+                                    <img class="card-img-top" src="images/product1.jpeg" alt="Product">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Apple TV 32GB</h4>
+                                      <p class="card-text">Black</p>
+                                      <span class="price">$ 49.99</span>
+                                    </div>
+                                  </div></a>
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <a href="#"><div class="card text-center">
+                                    <img class="card-img-top" src="images/product2.png" alt="Product">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Pebble Time</h4>
+                                      <p class="card-text">Red</p>
+                                      <span class="price">$ 49.99</span>
+                                    </div>
+                                  </div></a>
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <a href="#"><div class="card text-center">
+                                    <img class="card-img-top" src="images/product3.png" alt="Product">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Zendure Port-4 USB</h4>
+                                      <p class="card-text">White</p>
+                                      <span class="price">$ 49.99</span>
+                                    </div>
+                                  </div></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-12">
+                                <a href="#"><div class="card text-center">
+                                    <img class="card-img-top" src="images/product4.jpg" alt="Product">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Withings Smart Body Analyzer ws-50</h4>
+                                      <p class="card-text">Black</p>
+                                      <span class="price">$ 49.99</span>
+                                    </div>
+                                  </div></a>
+                            </div>
+                            <div class="col-lg-8 col-sm-12">
+                                <a href="#"><div class="card p-0">
+                                    <label class="tag">$39.99</label>
+                                    <img class="card-img-top" src="images/product5.jpg" alt="Product">
+                                    <div class="card-body p-3 d-flex justify-content-between">
+                                      <div class="txt text-left">
+                                        <h4 class="card-title m-0">JBL Charge 2+</h4>
+                                        <p class="card-text m-0">Black</p>
+                                       </div>
+                                       <div class="btn-group text-right">
+                                            <button type="button" class="btn btn-default">16 GB</button>
+                                            <button type="button" class="btn btn-default">Buy Now</button>
+                                        </div>
+                                    </div>
+                                  </div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <nav aria-label="navigation">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">&#8249;</a>
+                            </li>
+                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                            <li class="page-item"><a class="page-link" href="#">7</a></li>
+                            <li class="page-item"><a class="page-link" href="#">8</a></li>
+                            <li class="page-item">
+                            <a class="page-link" href="#">&#8250;</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-5">
+        <div class="container-fluid px-5">
+            <div class="best-seller bg-white">
+                <div class="row no-gutters">
+                    <h3 class="text-center" style="width: 100%;">Best Sellers</h3>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <a href="#">
+                            <div class="card text-center">
+                                <img class="card-img-top mx-auto d-block" src="images/best-seller1.jpg" alt="Product">
+                                <div class="card-body">
+                                    <h4 class="card-title">Beanie</h4>
+                                    <p class="card-text">Green</p>
+                                    <div class="price d-flex justify-content-around"><span class="old">&pound;49.99</span> <span class="new">&pound;29.99</span>
+                                    </div>
+                                </div>
+                            </div>    
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <a href="#">
+                            <div class="card text-center">
+                                <img class="card-img-top mx-auto d-block" src="images/best-seller2.jpg" alt="Product">
+                                <div class="card-body">
+                                    <h4 class="card-title">T-Shirt with Pant</h4>
+                                    <p class="card-text">Black</p>
+                                    <div class="price d-flex justify-content-around"><span class="old">&pound;49.99</span> <span class="new">&pound;29.99</span>
+                                    </div>
+                                </div>
+                            </div>    
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <a href="#">
+                            <div class="card text-center">
+                                <img class="card-img-top mx-auto d-block" src="images/best-seller3.jpg" alt="Product">
+                                <div class="card-body">
+                                    <h4 class="card-title">Pile-Lined Hook jacket</h4>
+                                    <p class="card-text">Dark Blue</p>
+                                    <div class="price d-flex justify-content-around"><span class="old">&pound;49.99</span> <span class="new">&pound;29.99</span>
+                                    </div>
+                                </div>
+                            </div>    
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <a href="#">
+                            <div class="card text-center">
+                                <img class="card-img-top mx-auto d-block" src="images/best-seller4.jpg" alt="Product">
+                                <div class="card-body">
+                                    <h4 class="card-title">Trainers</h4>
+                                    <p class="card-text">Space Gray</p>
+                                    <div class="price d-flex justify-content-around"><span class="old">&pound;49.99</span> <span class="new">&pound;29.99</span>
+                                    </div>
+                                </div>
+                            </div>    
+                        </a>
+                    </div>
+                </div>       
+            </div>
+        </div>
+    </section>
+    <section class="testimonial py-5">
+        <div class="container text-center">
+            <h2>What Our Costomers Have to Say</h2>
+            <p>Couple of words about this stories section</p>
+        </div>
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 px-4">
+                    <div class="testimonial-image" itemprop="image"> 
+                        <img width="180" height="180" src="images/customer1.jpg">
+                    </div>
+                    <div class="testimonial-meta"> 
+                        <strong>Anna Vandana</strong> <span class="testimonial-job-title" itemprop="jobTitle">UX Expert</span>
+                    </div>
+                    <div class="testimonial-content">
+                        <p> Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 px-4">
+                    <div class="testimonial-image" itemprop="image"> 
+                        <img width="180" height="180" src="images/customer2.jpg">
+                    </div>
+                    <div class="testimonial-meta"> 
+                        <strong>Anna Vandana</strong> <span class="testimonial-job-title" itemprop="jobTitle">UX Expert</span>
+                    </div>
+                    <div class="testimonial-content">
+                        <p> Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 px-4">
+                    <div class="testimonial-image" itemprop="image"> 
+                        <img width="180" height="180" src="images/customer3.jpg">
+                    </div>
+                    <div class="testimonial-meta"> 
+                        <strong>Anna Vandana</strong> <span class="testimonial-job-title" itemprop="jobTitle">UX Expert</span>
+                    </div>
+                    <div class="testimonial-content">
+                        <p> Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="p-5">
+        <div class="container-fluid">
+
+            <!-- Grid row -->
+            <div class="row">
+        
+              <!-- Grid column -->
+              <div class="col-md-3 col-sm-12  mx-auto">
+        
+                <!-- Links -->
+                <a href="#"><img src="images/footer-logo.png"></a>
+        
+              </div>
+              <!-- Grid column -->
+              <!-- Grid column -->
+              <div class="col-md-6 col-sm-12 mx-auto">
+        
+                <ul class="list-unstyled footer-menu">
+                  <li>
+                    <a href="#!">Home</a>
+                  </li>
+                  <li>
+                    <a href="#!">Shop</a>
+                  </li>
+                  <li>
+                    <a href="#!">Team</a>
+                  </li>
+                  <li>
+                    <a href="#!">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#!">Contacts</a>
+                  </li>
+                </ul>
+        
+              </div>
+              <!-- Grid column -->
+              
+              <!-- Grid column -->
+              <div class="col-md-3 col-sm-12 mx-auto">
+        
+                <ul class="list-unstyled social">
+                  <li>
+                    <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#!"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#!"><i class="fab fa-google-plus-g"></i></a>
+                  </li>
+                </ul>
+        
+              </div>
+              <!-- Grid column -->
+        
+        
+            </div>
+            <!-- Grid row -->
+            <hr>
+        
+          </div>
+          <!-- Footer Links -->
+        
+          <!-- Copyright -->
+          <div class="footer-copyright p-3">
+              <div class="row">
+                    <div class="col-md-6">
+                        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcugilla vel, aliquet nec, vulputat. </p>
+                    </div>
+                    <div class="col-md-6 ">
+                        <ul class="float-right list-unstyled">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+              </div>
+          </div>
+          <!-- Copyright -->
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js" ></script>
+    <!-- jQuery Custom Scroller CDN -->
+
+    
+     </body>
+</html>
